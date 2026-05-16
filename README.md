@@ -1,6 +1,10 @@
 # 🥚 Augovos App
 
+## 🔗 Links Úteis
+💡 [Aceder a **App** em Produção](https://venda-de-ovos-63448.web.app)
+
 Aplicação web desenvolvida para automatizar e gerir o fluxo de reservas e vendas de ovos, permitindo o controlo financeiro anual de forma prática e acessível (instalável no telemóvel como PWA).
+
 
 ## 🚀 Funcionalidades
 
