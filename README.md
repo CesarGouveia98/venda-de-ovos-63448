@@ -20,3 +20,28 @@ Aplicação web desenvolvida para automatizar e gerir o fluxo de reservas e vend
 ## 🧠 Notas de Desenvolvimento
 
 Este projeto foi idealizado por mim para resolver um problema real de logística familiar. A lógica de negócio, a arquitetura da base de dados (NoSQL), contando com o apoio de ferramentas de Inteligência Artificial (Gemini) para a otimização de blocos de código, resolução de erros de sintaxe em React e aceleração do processo de aprendizagem das tecnologias utilizadas.
+## 💻 Como Executar e Atualizar o Projeto
+
+### 🔧 Desenvolvimento Local (Para Avaliação)
+Se desejar clonar este repositório e executar o projeto localmente no seu computador, siga estes passos na consola:
+
+1. Instalar as dependências do projeto (recria a pasta node_modules):
+```bash
+npm install
+   ```
+2. Iniciar o servidor de testes local:
+  ```bash
+  npm run dev
+```
+
+🚀 Publicação / Deployment (Uso Pessoal)
+Comandos utilizados por mim para compilar:
+
+1. Gerar a versão de produção otimizada:
+ ```bash
+ npm run build
+ ```
+ 2. Publicar no Firebase:
+  ```bash
+  firebase deploy
+  ```
