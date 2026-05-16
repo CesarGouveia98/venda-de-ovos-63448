@@ -1,2 +1,22 @@
-# venda-de-ovos-63448
-Aplicação Web (PWA) em React e Firebase para gestão de reservas de ovos, autenticação de utilizadores e sincronização de dados em tempo real.
+# 🥚 Augovos App
+
+Aplicação web desenvolvida para automatizar e gerir o fluxo de reservas e vendas de ovos, permitindo o controlo financeiro anual de forma prática e acessível (instalável no telemóvel como PWA).
+
+## 🚀 Funcionalidades
+
+* **Autenticação de Utilizadores:** Sistema de login seguro gerido via Firebase Auth.
+* **Gestão de Reservas:** Registo de pedidos por cliente, quantidade (caixas de 12, 15, 30 unidades) e estado do pagamento.
+* **Calculadora Integradada:** Simulador de preços dinâmico para apoio ao vendedor.
+* **Base de Dados em Tempo Real:** Armazenamento seguro no Cloud Firestore.
+* **Instalação PWA:** Suporte para instalação direta no ecrã inicial do smartphone através de um banner nativo.
+* **Sincronização:** Exportação/espelhamento dos dados para controlo analítico mensal e anual.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Front-end:** React.js (com Vite)
+* **Estilização:** Tailwind CSS (Interface moderna, fluida e totalmente responsiva)
+* **Back-end & Database:** Firebase (Firestore, Authentication) e Blaze (Sincronização com Folha de Cálculo)
+
+## 🧠 Notas de Desenvolvimento
+
+Este projeto foi idealizado por mim para resolver um problema real de logística familiar. A lógica de negócio, a arquitetura da base de dados (NoSQL), contando com o apoio de ferramentas de Inteligência Artificial (Gemini) para a otimização de blocos de código, resolução de erros de sintaxe em React e aceleração do processo de aprendizagem das tecnologias utilizadas.
