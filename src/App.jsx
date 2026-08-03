@@ -508,9 +508,12 @@ function App() {
                   const d = new Date(inicioSemana);
                   d.setDate(inicioSemana.getDate() + index);
                   const dataIso = d.toISOString().split("T")[0];
-                  const reservasDoDia = reservas.filter(
-                    (r) => r.dataBusca === dataIso
-                  );
+                  const reservasDoDia = reservas.filter((r) => {
+                    if (!r.dataBusca) return false;
+                    // Normaliza datas com / ou - para o formato YYYY-MM-DD
+                    const dataFormatada = r.dataBusca.replaceAll("/", "-");
+                    return dataFormatada === dataIso || r.dataBusca === dataIso;
+                  });
                   const totalOvosDia = reservasDoDia.reduce(
                     (acc, r) => acc + Number(r.quantidade),
                     0
