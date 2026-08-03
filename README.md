@@ -1,70 +1,101 @@
-<<<<<<< HEAD
-# React + Vite
+# 🥚 Augovos App — Production Management & Reservation PWA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Augovos-orange?style=for-the-badge&logo=firebase)](https://venda-de-ovos-63448.web.app)
+[![Tech Stack](https://img.shields.io/badge/Stack-React_%7C_Vite_%7C_Tailwind_%7C_Firebase-blue?style=for-the-badge)](#-tecnologias-e-competências-demonstradas--technical-stack)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🇵🇹 Português
 
-## React Compiler
+### 📄 Sobre o Projeto
+O **Augovos** é uma solução Web & Progressive Web App (PWA) completa, desenvolvida para resolver um problema real de logística familiar na distribuição e venda de ovos. A plataforma automatiza o ciclo completo de pedidos, gestão de stock em tempo real, reservas de clientes e acompanhamento financeiro acumulado.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### 🎓 Competências Técnicas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# 🥚 Augovos App
+* **Desenvolvimento Web Moderno (Front-End):**
+  * Criação de SPA (Single Page Application) reativa com **React.js 19** e **Vite**.
+  * Construção de interface responsiva e intuitiva (*Mobile-First*) com **Tailwind CSS v4**.
+  * Gestão de estado complexo, modais e cálculos dinâmicos de preço/embalagem em tempo real.
 
-## 🔗 Links Úteis
-💡 [Aceder a **App** em Produção](https://venda-de-ovos-63448.web.app)
+* **Bases de Dados & Cloud Backend (NoSQL):**
+  * Modelação de dados NoSQL com **Google Cloud Firestore**.
+  * Implementação de listeners em tempo real (`onSnapshot`) para sincronização instantânea de stock e reservas entre cliente e vendedor.
 
-Aplicação web desenvolvida para automatizar e gerir o fluxo de reservas e vendas de ovos, permitindo o controlo financeiro anual de forma prática e acessível (instalável no telemóvel como PWA).
+* **Segurança & Autenticação:**
+  * Gestão de controlo de acessos (RBAC - Role-Based Access Control) via **Firebase Authentication**.
+  * Separação estrita de permissões e interfaces entre Cliente e Administrador/Vendedor.
 
+* **Engenharia de Software & PWA:**
+  * Configuração de **Service Workers** e Web App Manifest para funcionalidade instalável em dispositivos móveis.
+  * Ciclo completo de desenvolvimento (*DevOps/Deployment*): compilação otimizada, linting (`ESLint`) e alojamento via **Firebase Hosting**.
 
-## 🚀 Funcionalidades
+---
 
-* **Autenticação de Utilizadores:** Sistema de login seguro gerido via Firebase Auth.
-* **Gestão de Reservas:** Registo de pedidos por cliente, quantidade (caixas de 12, 15, 30 unidades) e estado do pagamento.
-* **Calculadora Integradada:** Simulador de preços dinâmico para apoio ao vendedor.
-* **Base de Dados em Tempo Real:** Armazenamento seguro no Cloud Firestore.
-* **Instalação PWA:** Suporte para instalação direta no ecrã inicial do smartphone através de um banner nativo.
-* **Sincronização:** Exportação/espelhamento dos dados para controlo analítico mensal e anual.
+### 🚀 Funcionalidades Principais
 
-## 🛠️ Tecnologias Utilizadas
+* 🔐 **Autenticação & Perfis:** Registo, login e recuperação de palavra-passe com permissões especiais para o perfil de vendedor.
+* 📦 **Gestão Dinâmica de Stock:** Atualização de recolha diária e deduçao automática de ovos comprometidos/reservados.
+* 📊 **Painel Financeiro & Entregas:** Vista semanal de entregas e indicadores acumulados (Semana, Mês e Ano em €).
+* 🧮 **Simulador de Preços & Embalagens:** Algoritmo dinâmico para otimização de caixas (12, 15 e 30 unidades) e cálculo de preços.
+* 📱 **Experiência PWA:** Instalação direta no smartphone através de banner nativo sem necessidade de app store.
 
-* **Front-end:** React.js (com Vite)
-* **Estilização:** Tailwind CSS (Interface moderna, fluida e totalmente responsiva)
-* **Back-end & Database:** Firebase (Firestore, Authentication) e Blaze (Sincronização com Folha de Cálculo)
+---
 
-## 🧠 Notas de Desenvolvimento
+### 🛠️ Como Executar Localmente
 
-Este projeto foi idealizado por mim para resolver um problema real de logística familiar. A lógica de negócio, a arquitetura da base de dados (NoSQL), contando com o apoio de ferramentas de Inteligência Artificial (Gemini) para a otimização de blocos de código, resolução de erros de sintaxe em React e aceleração do processo de aprendizagem das tecnologias utilizadas.
-## 💻 Como Executar e Atualizar o Projeto
-
-### 🔧 Desenvolvimento Local (Para Avaliação)
-Se desejar clonar este repositório e executar o projeto localmente no seu computador, siga estes passos na consola:
-
-1. Instalar as dependências do projeto (recria a pasta node_modules):
 ```bash
+# 1. Clonar o repositório e instalar dependências
 npm install
-   ```
-2. Iniciar o servidor de testes local:
-  ```bash
-  npm run dev
+
+# 2. Executar servidor de desenvolvimento
+npm run dev
+
+# 3. Gerar build de produção
+npm run build
 ```
 
-🚀 Publicação / Deployment (Uso Pessoal)
-Comandos utilizados por mim para compilar:
+---
 
-1. Gerar a versão de produção otimizada:
- ```bash
- npm run build
- ```
- 2. Publicar no Firebase:
-  ```bash
-  firebase deploy
-  ```
->>>>>>> fd2359d8faaab339c95143b6fdb441a45fc15ce6
+## 🇬🇧 English
+### 📄 Project Overview
+Augovos is a full-stack Progressive Web App (PWA) designed to streamline local egg production, sales logistics, and inventory management. It automates customer reservations, real-time stock deduction, and financial reporting through an intuitive, mobile-first interface.
+
+### 💡 Core Technical Highlights
+
+* **Modern Front-End Architecture:** 
+  * Built using **React 19**, **Vite**, and **Tailwind CSS**, featuring reactive UI state management, real-time price calculators, and seamless modal workflows.
+* **NoSQL Database & Real-Time Sync:** 
+  * Powered by **Firebase Firestore**, leveraging real-time listeners (`onSnapshot`) to reflect live inventory updates across buyer and seller views.
+* **Authentication & RBAC:** 
+  * Integrated **Firebase Auth** with role-based access controls to separate customer ordering capabilities from seller administrative features.
+* **Progressive Web App (PWA):** 
+  * Service worker integration and Web Manifest setup enabling native-like mobile installation and offline caching support.
+* **Software Engineering & DevOps:** 
+  * Full development lifecycle featuring optimized production build pipelines via **Vite**, code linting with **ESLint**, and deployment via **Firebase Hosting**.
+
+---
+
+### 🚀 Key Features
+
+* 🔐 **Authentication & Profiles:** Registration, login, and password recovery with special permissions for the seller profile.
+* 📦 **Dynamic Stock Management:** Daily collection updates and automatic deduction of committed/reserved eggs.
+* 📊 **Financial & Deliveries Dashboard:** Weekly delivery view and accumulated metrics (Week, Month, and Year in €).
+* 🧮 **Price & Packaging Simulator:** Dynamic algorithm for box optimization (12, 15, and 30 units) and price calculation.
+* 📱 **PWA Experience:** Direct installation on smartphones via native banner without requiring an app store.
+
+----
+
+### 🛠️ How to Run Locally
+
+```bash
+# 1. Clone repository and install dependencies
+npm install
+
+# 2. Run development server
+npm run dev
+
+# 3. Generate production build
+npm run build
+```
